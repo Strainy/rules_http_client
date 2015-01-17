@@ -1,0 +1,5 @@
+name = Rules HTTP Client
+description = Provides an action for making http requests.
+package = Rules
+core = 7.x
+dependencies[] = rules
