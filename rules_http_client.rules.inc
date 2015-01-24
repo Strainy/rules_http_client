@@ -84,7 +84,7 @@ function rules_http_client_options_method() {
  */
 function rules_http_client_request_url($url, $headers = '', $method = 'GET', $data = NULL, $max_redirects = 3, $timeout = 30) {
   // Headers.
-  if( strpos(':', $headers) >= 0 ){
+  if( strpos(':', $headers) !== false ){
   	$headers = explode("\r\n", $headers);
   	foreach ($headers as $header) {
     	list($name, $value) = explode(':', $header, 2);
